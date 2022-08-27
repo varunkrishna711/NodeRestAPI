@@ -34,15 +34,17 @@ class Tasks extends Component {
     }
 
     handleUpdate = async(currentTask) => {
-        const originalTasks = this.setState.tasks;
+        const originalTasks = this.state.tasks;
         try {
             const tasks = [...originalTasks];
             const index = tasks.findIndex((task) => task._id === currentTask);
             tasks[index] = {...tasks[index]};
             tasks[index].completed = !tasks[index].completed;
-            await updateTask(currentTask, {completed: tasks[index].completed})
+            this.setState({tasks});
+            await updateTask(currentTask, {completed: tasks[index].completed});
         } catch (error) {
-            this.setState({tasks:originalTasks});          
+            this.setState({tasks:originalTasks});    
+            console.log(error);      
         }
     }
 

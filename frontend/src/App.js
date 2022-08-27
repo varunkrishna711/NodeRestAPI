@@ -22,7 +22,7 @@ class App extends Tasks {
               <TextField 
                 variant="outlined"
                 size="small"
-                style={{width:"80px"}}
+                style={{width:"80%"}}
                 value={this.state.currentTask}
                 required={true}
                 onChange={this.handleChange}
