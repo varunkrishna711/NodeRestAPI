@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NodeRestAPI/static/css/main.65bfb6ca.css",
+    "main.js": "/NodeRestAPI/static/js/main.9a2776e6.js",
+    "index.html": "/NodeRestAPI/index.html",
+    "main.65bfb6ca.css.map": "/NodeRestAPI/static/css/main.65bfb6ca.css.map",
+    "main.9a2776e6.js.map": "/NodeRestAPI/static/js/main.9a2776e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65bfb6ca.css",
+    "static/js/main.9a2776e6.js"
+  ]
+}
